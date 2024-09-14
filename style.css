@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #FAFAD2;
+    text-align: center;
+background: linear-gradient(135deg, #fbc2eb, #a6c0fe); /* Mawar dan Lavender */
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+main .background {
+    position: relative;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.audio-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#play-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#play-btn:hover {
+    background: #f0f0f0;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Adjust width for mobile */
+}
+
+.love-buttons {
+    margin: 20px 0;
+}
+
+.love-button {
+    background: none;
+    border: none;
+    font-size: 1.5em; /* Adjust size for mobile */
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 0 5px;
+}
+
+.love-button:hover {
+    transform: scale(1.2);
+}
+
+.love-content {
+    display: none;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    #play-btn {
+        font-size: 0.8em;
+        padding: 8px 16px;
+    }
+
+    .love-button {
+        font-size: 1.2em;
+        margin: 0 3px;
+    }
+
+    .message h2 {
+        font-size: 1.2em; /* Adjust heading size for mobile */
+    }
+
+    .love-content img {
+        width: 80%; /* Adjust width for mobile */
+        max-width: 250px; /* Limit maximum width */
+    }
+}
